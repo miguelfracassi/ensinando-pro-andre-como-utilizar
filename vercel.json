@@ -1,0 +1,19 @@
+{
+  "outputDirectory": "public",
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/favicon.ico", "destination": "/logo.png" },
+    {
+      "source": "/api/vakinha/:path*",
+      "destination": "/api/vakinha?r=:path*"
+    },
+    {
+      "source": "/api/:path*",
+      "destination": "/api/app?r=:path*"
+    },
+    {
+      "source": "/vakinhas/:slug",
+      "destination": "/vakinhas/apoio-inicial.html"
+    }
+  ]
+}
